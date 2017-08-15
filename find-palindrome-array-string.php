@@ -1,6 +1,6 @@
 <?php
 
-$palindrome = ["Madam", "lol", "mom", "daD", "teSt", "level"];
+$palindrome = ["Madam", "lol", "mom", "daD", "teSt", "levEel"];
 
 echo nl2br( "==========================\n");
 
@@ -27,7 +27,7 @@ echo nl2br( "==========================\n");
 foreach ( $palindrome as $row )
 {
 	
-	if ( strtolower($row[0] . $row[1]) === strtolower($row[strlen($row) - 1] . $row[strlen($row) - 2]) ) {
+	if ( strtolower($row[0] . $row[1] . $row[2]) === strtolower($row[strlen($row) - 1] . $row[strlen($row) - 2] . $row[strlen($row) - 3]) ) {
 		
 		echo nl2br(strtolower($row) . " is PALINDROME ! \n\n");
 			
