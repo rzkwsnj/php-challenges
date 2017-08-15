@@ -19,8 +19,8 @@ $init = 1;
 // Total lines
 $input = 10;
 
-// Base
-$base = array(1,1);
+// Base ARRAY
+$base = [1, 1];
 
 if ( !empty($input) && $input > 1 ) {
 	
@@ -39,22 +39,22 @@ if ( !empty($input) && $input > 1 ) {
 	  // We start with index 1, zeroth element always holds 1
 	  for ( $k=1; $k<count($arr)-1; $k++) 
 	  {
-		$arr[$k] = $base[$k] + $base[$k-1];
+	      $arr[$k] = $base[$k] + $base[$k-1];
 	  }
 	  
 	  // The new ARRAY
 	  if( is_array( $arr ) && !empty( $arr ) ) {
 		  
 	      for( $i=0; $i<count($arr); $i++) 
-		  {
-		      echo $arr[$i] . " ";
-		  }
+	      {
+	          echo $arr[$i] . " ";
+	      }
 		  
 	  }
 		
 	  echo "<br />";
 	  
-	  // Preserve Current Array
+	  // Preserve Current ARRAY
 	  $base = $arr;
 	}
 	
