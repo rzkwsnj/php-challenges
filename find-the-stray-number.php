@@ -4,6 +4,12 @@
 // $this->assertEquals(stray([4, 2, 2, 2, 2]), 4);
 // $this->assertEquals(stray([4, 4, 4, 5, 4, 4, 4]), 5);
 
+// return array_search(1, array_count_values($arr));
+
+
+// sort($arr);
+// return $arr['0'] ==  $arr['1'] ? end($arr) : $arr['0'];
+
 function stray($arr)
 {
   	$res = array();
