@@ -10,6 +10,9 @@
 // sort($arr);
 // return $arr['0'] ==  $arr['1'] ? end($arr) : $arr['0'];
 
+// $a = array_count_values($arr);
+// return array_flip($a)[1];
+
 function stray($arr)
 {
   	$res = array();
